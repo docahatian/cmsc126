@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CMSC 126: Lab Activity 4, Tax Computation</title>
+    <script src = "CMSC126LA4.js"></script>
+</head>
+<style>
+body{
+	font-family: Helvetica, sans-serif;
+	font-size: small;
+	background-color: rgba(237,245,225, 0.5);
+	text-align: center;
+}
+
+</style>
+<body>
+	<form>
+		Monthly Income: <input id="income_input" type="number" placeholder="Please input your monthly salary"/><br/>
+		<br>
+		Number of Dependents: <input id="dependents_input" type="number" placeholder="If none, place 0."/><br/>
+		<br>
+		Government worker? <input type="radio" id="governmentWorker" name="worker">
+  		<label> Yes </label>
+  		<input type="radio" id="privateWorker" name="worker">
+  		<label> No </label><br/>
+		<br>
+		<input type="button" value="Calculate Payable Tax" onclick="taxCompute();">
+		<input type="button" value="Calculate Salary Deduction" onclick="deductionCompute();">
+	</form>
+	<h2 id="result"></h2>
+	<h3 style="font-weight: lighter" id="programInfo"></h3>
+	<h3 style="font-weight: lighter" id="creatorInfo"></h3>
+</body>
+</html>
